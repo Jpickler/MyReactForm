@@ -6,13 +6,13 @@ import SignUpForm from './components/SignUpForm'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [token, setToken] = useState(null)
 
   return (
     <>
       <h1> My React Form</h1>
-      <SignUpForm />
-      <Authenticate />
+      <SignUpForm setToken={setToken}/>
+      <Authenticate token={token}/>
     </>
   )
 }
