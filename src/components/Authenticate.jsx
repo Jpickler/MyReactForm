@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-const Authenticate = (token) => {
+const Authenticate = ({token}) => {
 
   const [error, setError] = useState(null);
 
@@ -19,6 +19,7 @@ const handleClick =async() =>{
         const response=await sendData.json();
         console.log(response);
         console.log(`token is: `, token);
+
 
 
     }catch (error) {
