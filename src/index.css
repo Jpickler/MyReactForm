@@ -15,7 +15,7 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #a9adfa;
   text-decoration: inherit;
 }
 a:hover {
@@ -33,6 +33,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  color: rgb(94, 94, 241);
 }
 
 button {
@@ -42,7 +43,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #db2424;
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -54,15 +55,26 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
   a:hover {
     color: #747bff;
   }
   button {
-    background-color: #f9f9f9;
+    background-color: #ee4f4f;
   }
+form{
+color: rgb(94, 94, 241);
+
+}
+input{
+  background-color: rgb(219, 219, 131);
+}
+
+p{
+  color: rgb(94, 94, 241);
+}
+.warningMessage{
+  color: red;
+}
+.successMessage{
+  color: yellow;
 }
