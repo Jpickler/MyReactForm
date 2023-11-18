@@ -4,6 +4,7 @@ import { useState } from "react";
 const Authenticate = ({token}) => {
 
   const [error, setError] = useState(null);
+  const [successMessage, setSuccessMessage] = useState(null);
 
 const handleClick =async() =>{
     console.log(`auth button clicked`)
@@ -17,8 +18,8 @@ const handleClick =async() =>{
                 }
               });
         const response=await sendData.json();
-        console.log(response);
-        console.log(`token is: `, token);
+        setSuccessMessage(response.message);
+     
 
 
 
@@ -34,6 +35,7 @@ return (
     <h2>Authenticate</h2>
     {error && <p>{error}</p>}
     <button onClick={handleClick}>Press for Authentication</button>
+    {successMessage && <p> {successMessage}</p>}
 
   </>
 )
